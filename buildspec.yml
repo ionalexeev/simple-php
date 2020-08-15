@@ -1,0 +1,27 @@
+version: 0.2
+
+env:
+  variables:
+    test: "yes"
+    environment: "development"
+
+phases:
+  install:
+    commands:
+      echo "download specific packages, apt-get install php"
+  
+  pre_build:
+    commands:
+      echo "creating directory, mkdir /var/www/simpleapp/"
+  
+  build:
+    commands:
+      echo "build commands here, npm"
+  
+  post_build:
+    commands:
+      echo "testing and clean up, curl localhost:80"
+
+artifacts:
+  files:
+    - '**/*'
