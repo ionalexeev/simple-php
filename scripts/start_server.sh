@@ -1,3 +1,3 @@
 #!/bin/bash
 
-systemctl start php
+systemctl start apache2

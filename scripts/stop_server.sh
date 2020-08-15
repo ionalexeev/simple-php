@@ -1,2 +1,2 @@
 #!/bin/bash
-systemctl stop php
+systemctl stop apache2
